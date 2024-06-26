@@ -1,0 +1,87 @@
+/* src/app/task-list/task-list.component.css */
+.task-list {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  background: rgba(50, 50, 100, 0.85);  /* Darker shade for task list background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.task-list h3{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;  /* White color for heading */
+}
+label{
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.task-list input, .task-list button {
+  padding: 10px;
+  margin: 10px 0;
+  /* border: 2px solid #0f0; */
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;  /* White color for input and button text */
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.task-list input:hover, .task-list button:hover {
+  box-shadow: 0 0 10px #0f0;
+}
+
+.task-list input {
+  width: calc(100% - 24px);
+}
+
+.task-list button {
+  background-color: #319a49;
+  color: #ffffff;  /* White color for button text */
+  cursor: pointer;
+}
+
+.task-list button:hover {
+  background-color: #218838;
+  
+  box-shadow: 0 0 10px #0f0;
+}
+
+.task-list ul li button:hover{
+  box-shadow: 0 0 10px rgb(244, 7, 7);
+}
+
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin: 5px 0;
+  background-color: rgba(70, 70, 120, 0.9);  /* Slightly different darker shade for list items */
+  border-radius: 5px;
+  color: #ffffff;  /* White color for list item text */
+}
+
+.task-list li:hover{
+  
+  box-shadow: 0 0 10px rgb(249, 216, 27);
+}
+
+.task-list li span {
+  cursor: pointer;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: #f30808;
+}
